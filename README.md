@@ -8,11 +8,11 @@
 
 ## What is HalalYield?
 
-HalalYield is a non-custodial wallet that makes earning yield on real-world asset (RWA) protocols effortless and accessible for the 1.8 billion Muslims globally who are excluded from interest-bearing DeFi.
+HalalYield is the simplest way for Muslim investors to earn Halal yield on real-world assets — starting with Centrifuge trade finance and Ondo T-bills on Algorand.
 
 **The problem:** Every major yield protocol — Aave, Compound, Ondo (standard) — pays Riba (interest), which is forbidden in Islamic finance. At the same time, accessing RWA protocols requires deep technical knowledge, multi-platform KYC, and gas management that eliminates retail users entirely.
 
-**The solution:** HalalYield wraps Shariah-compliant RWA pools (Sukuk, trade finance, ethical real estate) in a wallet UX so simple a 90-year-old could use it — and gamified enough to build lasting financial health habits.
+**The wedge:** A one-tap interface for Shariah-compliant RWA yield on Algorand. Starting with one asset class (trade finance + T-bills), one user segment (Muslim retail investors), one chain. Everything else — looping strategies, AI optimization, cross-chain aggregation — is roadmap after we nail this.
 
 ---
 
