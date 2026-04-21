@@ -118,7 +118,7 @@ npx algokit deploy --network localnet
 
 Open `app/demo/index.html` in a browser to run the interactive prototype — no install needed.
 
-[Live demo →](https://umairdefi.github.io/halalyield)
+[Live demo →](https://https://ieea1.github.io/HalalYield
 
 ---
 
