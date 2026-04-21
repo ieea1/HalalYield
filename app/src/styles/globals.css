@@ -1,0 +1,161 @@
+:root {
+  --color-dark:     #0A1628;
+  --color-navy:     #0D2547;
+  --color-card:     #112240;
+  --color-teal:     #00C9A7;
+  --color-teal-dim: #008F76;
+  --color-gold:     #F5C842;
+  --color-white:    #FFFFFF;
+  --color-muted:    #8BA0B8;
+  --color-text:     #E2EAF4;
+  --color-danger:   #FF6B6B;
+
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+
+  --font-sans: -apple-system, 'Segoe UI', 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--color-dark);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  min-height: 100vh;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1 { font-size: 28px; font-weight: 700; color: var(--color-white); line-height: 1.2; }
+h2 { font-size: 22px; font-weight: 700; color: var(--color-white); line-height: 1.25; }
+h3 { font-size: 16px; font-weight: 600; color: var(--color-white); }
+p  { font-size: 14px; color: var(--color-muted); line-height: 1.6; }
+
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: var(--color-teal);
+  color: var(--color-dark);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary:hover  { background: #00e0bc; transform: translateY(-1px); }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+.btn-secondary {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: var(--color-teal);
+  border: 1px solid rgba(0, 201, 167, 0.35);
+  border-radius: var(--radius-lg);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { background: rgba(0, 201, 167, 0.08); }
+
+/* Cards */
+.card {
+  background: var(--color-card);
+  border: 1px solid rgba(0, 201, 167, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+/* Screen layout */
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 32px;
+  animation: fadeUp 0.25s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Tags */
+.tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* XP / progress bar */
+.xp-track {
+  background: rgba(139, 160, 184, 0.12);
+  border-radius: 99px;
+  height: 6px;
+  overflow: hidden;
+}
+.xp-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: var(--color-teal);
+  transition: width 0.8s ease;
+}
+
+/* Halal badge */
+.halal-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: rgba(0, 201, 167, 0.1);
+  color: var(--color-teal);
+  border: 1px solid rgba(0, 201, 167, 0.25);
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: rgba(139, 160, 184, 0.1);
+  margin: 16px 0;
+}
+
+/* Back button */
+.btn-back {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+}
+.btn-back:hover { color: var(--color-text); }

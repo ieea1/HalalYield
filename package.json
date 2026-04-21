@@ -1,0 +1,17 @@
+{
+  "name": "halalyield",
+  "version": "0.1.0",
+  "description": "Shariah-compliant RWA yield wallet built on Algorand",
+  "private": true,
+  "scripts": {
+    "dev": "cd app && npm install && npm run dev",
+    "build": "cd app && npm install && npm run build",
+    "test:contracts": "cd contracts && npm install && npm test",
+    "deploy:localnet": "node scripts/deploy.js --network localnet",
+    "deploy:testnet": "node scripts/deploy.js --network testnet"
+  },
+  "workspaces": [
+    "app",
+    "contracts"
+  ]
+}

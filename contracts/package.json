@@ -1,0 +1,20 @@
+{
+  "name": "halalyield-contracts",
+  "version": "0.1.0",
+  "description": "HalalYield TealScript smart contracts — Shariah compliance engine + RWA vaults",
+  "type": "module",
+  "scripts": {
+    "build": "algokit compile",
+    "test": "vitest",
+    "deploy:localnet": "algokit deploy --network localnet",
+    "deploy:testnet": "algokit deploy --network testnet"
+  },
+  "dependencies": {
+    "@algorandfoundation/tealscript": "^0.100.0",
+    "algosdk": "^2.7.0"
+  },
+  "devDependencies": {
+    "@algorandfoundation/algokit-utils": "^6.0.0",
+    "vitest": "^1.4.0"
+  }
+}
